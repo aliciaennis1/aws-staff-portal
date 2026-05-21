@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventure Wellbeing School — Staff Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(160deg, #4a6b4e 0%, #6b8c6e 50%, #3d5c40 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px 64px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .logo-wrap {
+      margin: 0 auto 16px;
+      width: 220px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 20px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    header p {
+      margin-top: 4px;
+      font-size: 1.4rem;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 36px 28px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+    }
+
+    .card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 20px;
+      flex-shrink: 0;
+    }
+
+    .card:nth-child(1) .card-icon { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+    .card:nth-child(2) .card-icon { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .card:nth-child(3) .card-icon { background: linear-gradient(135deg, #10b981, #047857); }
+    .card:nth-child(4) .card-icon { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .card p {
+      font-size: 0.875rem;
+      color: #64748b;
+      line-height: 1.6;
+      flex-grow: 1;
+      margin-bottom: 24px;
+    }
+
+    .launch-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.15s ease;
+    }
+
+    .launch-btn:hover { opacity: 0.88; }
+
+    .card:nth-child(1) .launch-btn { background: #3b82f6; }
+    .card:nth-child(2) .launch-btn { background: #f59e0b; }
+    .card:nth-child(3) .launch-btn { background: #10b981; }
+    .card:nth-child(4) .launch-btn { background: #ef4444; }
+
+    footer {
+      margin-top: 56px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-wrap">
+      <img src="logo.png" alt="Adventure Wellbeing School" />
+    </div>
+    <p>Staff Portal</p>
+  </header>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-icon">
+        <i class="fa-solid fa-clipboard-list"></i>
+      </div>
+      <h2>Referral Tracker</h2>
+      <a class="launch-btn" href="https://purple-tree-0111e2003.7.azurestaticapps.net" target="_blank" rel="noopener">
+        Launch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <i class="fa-solid fa-hard-hat"></i>
+      </div>
+      <h2>Health &amp; Safety</h2>
+      <a class="launch-btn" href="https://nice-smoke-0b1f12003.7.azurestaticapps.net" target="_blank" rel="noopener">
+        Launch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <i class="fa-solid fa-calendar-check"></i>
+      </div>
+      <h2>EHCP Tracker</h2>
+      <a class="launch-btn" href="https://agreeable-mushroom-07f961d03.7.azurestaticapps.net" target="_blank" rel="noopener">
+        Launch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <i class="fa-solid fa-shield-halved"></i>
+      </div>
+      <h2>Safeguarding Referral Tracker</h2>
+      <a class="launch-btn" href="https://victorious-rock-067895f10.7.azurestaticapps.net" target="_blank" rel="noopener">
+        Launch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>&copy; 2026 Adventure Wellbeing School</footer>
+
+</body>
+</html>
