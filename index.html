@@ -49,10 +49,10 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 20px;
       width: 100%;
-      max-width: 1100px;
+      max-width: 1200px;
     }
 
     .card {
@@ -90,6 +90,7 @@
     .card:nth-child(2) .card-icon { background: linear-gradient(135deg, #f59e0b, #d97706); }
     .card:nth-child(3) .card-icon { background: linear-gradient(135deg, #10b981, #047857); }
     .card:nth-child(4) .card-icon { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+    .card:nth-child(5) .card-icon { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
 
     .card h2 {
       font-size: 1.1rem;
@@ -126,6 +127,7 @@
     .card:nth-child(2) .launch-btn { background: #f59e0b; }
     .card:nth-child(3) .launch-btn { background: #10b981; }
     .card:nth-child(4) .launch-btn { background: #ef4444; }
+    .card:nth-child(5) .launch-btn { background: #8b5cf6; }
 
     footer {
       margin-top: 56px;
@@ -186,6 +188,16 @@
       </div>
       <h2>Safeguarding Referral Tracker</h2>
       <a class="launch-btn" href="https://victorious-rock-067895f10.7.azurestaticapps.net" target="_blank" rel="noopener">
+        Launch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <i class="fa-solid fa-users-gear"></i>
+      </div>
+      <h2>Staff Management</h2>
+      <a class="launch-btn" href="https://red-bush-034f91103.7.azurestaticapps.net" target="_blank" rel="noopener">
         Launch <i class="fa-solid fa-arrow-up-right-from-square"></i>
       </a>
     </div>
